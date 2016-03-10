@@ -18,6 +18,7 @@ Create an API with NodeJS & Express that accepts a valid URL and returns the wor
     words: 2508
   }
   ```
+  
 - An example failed response may look like this:
   ```
   // HTTP Status: 500
