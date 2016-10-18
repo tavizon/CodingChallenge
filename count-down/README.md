@@ -47,9 +47,13 @@ dood
 cood
 bood
 aood
-znod
+znod // Notice 'a' -> 'z' and 'o' -> 'n'
 xnod
 ynod
+...
+bbod
+abod
+zcod // Notice 'a' -> 'z' and 'b' -> 'c'
 ...
 aaaa
 ```
@@ -61,11 +65,13 @@ food
 fooc
 foob
 fooa
-fonz
+fonz // Notice 'o' -> 'n' and 'a' -> 'z'
 fony
 fonx
-fonw
-fonv
+...
+fonb
+fona
+fomz // Notice 'n' -> 'm' and 'a' -> 'z'
 ...
 aaaa
 ```
