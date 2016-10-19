@@ -51,9 +51,9 @@ znod // Notice 'a' -> 'z' and 'o' -> 'n'
 xnod
 ynod
 ...
-bbod
-abod
-zcod // Notice 'a' -> 'z' and 'b' -> 'c'
+bdod
+adod
+zcod // Notice 'a' -> 'z' and 'd' -> 'c'
 ...
 aaaa
 ```
