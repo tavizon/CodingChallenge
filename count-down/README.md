@@ -10,8 +10,8 @@ If the given integer is `5`, the output should be:
 
 ```
 5
-3
 4
+3
 2
 1
 0
@@ -48,8 +48,8 @@ cood
 bood
 aood
 znod // Notice 'a' -> 'z' and 'o' -> 'n'
-xnod
 ynod
+xnod
 ...
 bdod
 adod
