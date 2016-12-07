@@ -78,6 +78,7 @@ aaaa
 
 ## Guidelines
 - All code should be written in vanilla JavaScript (nodejs 6) or Python (python 2.7).
+- If you use Javascript, please refrain from using ecmascript 2015 features (fat arrows, let, const, class, etc.)
 - Please do not use any third party libraries or plugins.
 - Documentation and maintainability is a plus.
 
