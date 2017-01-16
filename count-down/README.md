@@ -78,7 +78,7 @@ aaaa
 
 ## Guidelines
 - All code should be written in vanilla JavaScript (nodejs 6) or Python (python 2.7).
-- If you use Javascript, please refrain from using ecmascript 2015 features (fat arrows, let, const, class, etc.)
+- If you use Javascript, please refrain from using the following ES6 features: [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator), [for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of), [Default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters), [Rest](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters), [Spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 - Please do not use any third party libraries or plugins.
 - Documentation and maintainability is a plus.
 
