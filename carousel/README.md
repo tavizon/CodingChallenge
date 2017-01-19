@@ -1,7 +1,7 @@
 # Kink.com Coding Challenge - Carousel
 
 ## Goal
-Using the HTML below, write a self executing vanilla JavaScript function that cycles through the images (much like a carousel). Each image should be displayed for roughly 1 second before moving on to the next image.
+Using the HTML below, write a self-executing vanilla JavaScript function that cycles through the images (much like a carousel). Each image should be displayed for roughly 1 second before moving on to the next image.
 
 ## Source HTML
 ```html
@@ -23,8 +23,8 @@ Using the HTML below, write a self executing vanilla JavaScript function that cy
 			<img name="image" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=5&w=350&h=200" />
 		</div>
 		<script>
-			/** 
-			 * your code here! 
+			/**
+			 * your code here!
 			 */
 		</script>
 	</body>
@@ -38,7 +38,7 @@ Your output should emulate the following animated gif:
 
 ## Guidelines
 - All code should be written in vanilla JavaScript (ES6).
-- Please refrain from using the following ES6 features: 
+- Please refrain from using the following ES6 features:
 	- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 	- [Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
 	- [for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
