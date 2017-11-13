@@ -27,4 +27,7 @@ work product.
 
 ## Submission
 -  Clone the `modal` directory from this repository to your local environment
-and submit the entire directory as a zip file via email. 
+and submit the entire directory as a zip file via email.
+
+## Time Allotment
+We respect your time and would prefer you not spend more than 3-5 hours. Feel free to include code comments to indicate any features you don't have time to implement.
