@@ -18,6 +18,5 @@ app.get('/', (request, response) => response.send('Hello World!'));
 
 // Start it up
 module.exports = app.listen(config.application.port, () => {
-	console.log('word-api - listening on port 5959');
 	console.log(`word-api - listening on port ${config.application.port}`);
 });
