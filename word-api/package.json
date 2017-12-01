@@ -25,7 +25,6 @@
     "helmet": "^3.9.0"
   },
   "devDependencies": {
-    "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git",
-    "eslint-plugin-protractor": "^1.40.0"
+    "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git"
   }
 }
