@@ -1,36 +1,37 @@
 # Kink.com Coding Challenge - Word API
 
-## Goal
-Create an API with NodeJS & Express that accepts a valid URL and returns the word count of the page referenced in the URL.
+## Developer Setup
 
-## Guidelines
-- You may use any npm modules you feel are appropriate.
-- All code should be written in vanilla JavaScript (no TypeScript or CoffeeScript).
-- Include any tests you feel are necessary.
-- Documentation and maintainability is a plus.
+### System Prerequisites
 
-## URL Structure and Responses
-- An example api request may look like this: `/api/words?url=http://www.kink.com/shoot/39563`
-- An example successful response may look like this:
-  ```
-  // HTTP Status: 200
-  {
-    words: 2508
-  }
-  ```
+- Node.js
 
-- An example failed response may look like this:
-  ```
-  // HTTP Status: 500
-  {
-    error: "URL was invalid or not supplied"
-  }
+### Get the code
+```bash
+git clone https://github.com:tavizon/CodingChallenge.git
+```
 
-  // HTTP Status: 404
-  {
-	  error: "Page not found"
-  }
-  ```
+### Install Dependancies
 
-### Time Allotment
-We respect your time and would prefer you not spend more than 3-5 hours on this task. Feel free to include code comments to indicate any features you don't have time to implement.
+```bash
+cd CodingChallenge/word-api
+npm install
+```
+
+### Configure the Service
+
+```bash
+cp ./config/properties.json.template ./config/properties.json
+```
+
+No additional configuration is needed for local development.
+
+### Run the Service
+
+From the `word-api` directory, run:
+
+```bash
+node app.js
+```
+
+Navigate to [http://localhost:5959/ping](http://localhost:5959/ping) to verify that the service is running.
