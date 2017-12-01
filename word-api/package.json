@@ -1,0 +1,30 @@
+{
+  "name": "word",
+  "version": "0.0.1",
+  "description": "Word Statistics Service",
+  "main": "app.js",
+  "keywords": [
+    "word",
+    "count"
+  ],
+  "author": "Jesse Tavizon <tavizon@kink.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tavizon/CodingChallenge.git"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tavizon/CodingChallenge/issues"
+  },
+  "homepage": "https://github.com/tavizon/CodingChallenge/word-api/#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git",
+    "eslint-plugin-protractor": "^1.40.0"
+  }
+}
