@@ -1,0 +1,10 @@
+{
+  "application": {
+    "port": 5959
+  },
+  "helmet": {
+    "hidePoweredBy": {
+      "setTo": "turkey leftovers"
+    }
+  }
+}
