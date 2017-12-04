@@ -15,9 +15,6 @@ app.get('/ping', (request, response) => response.send('PONG'));
 
 app.use('/', require('./routes')(express.Router()));
 
-// TODO: require routes dir
-// app.get('/', (request, response) => response.send('Hello World!'));
-
 // Start it up
 module.exports = app.listen(config.application.port, () => {
 	console.log(`word-api - listening on port ${config.application.port}`);
