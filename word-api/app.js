@@ -13,8 +13,10 @@ app.use(helmet(config.helmet));
 // Am I alive?
 app.get('/ping', (request, response) => response.send('PONG'));
 
+app.use('/', require('./routes')(express.Router()));
+
 // TODO: require routes dir
-app.get('/', (request, response) => response.send('Hello World!'));
+// app.get('/', (request, response) => response.send('Hello World!'));
 
 // Start it up
 module.exports = app.listen(config.application.port, () => {
