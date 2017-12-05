@@ -13,7 +13,11 @@ app.use(helmet(config.helmet));
 // Am I alive?
 app.get('/ping', (request, response) => response.send('PONG'));
 
+// Setup routes
 app.use('/', require('./routes')(express.Router()));
+
+// 404 for anything else
+app.use('*', (request, response) => response.status(404).send('Not Found'));
 
 // Start it up
 module.exports = app.listen(config.application.port, () => {
