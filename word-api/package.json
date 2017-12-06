@@ -22,7 +22,8 @@
   "homepage": "https://github.com/tavizon/CodingChallenge/word-api/#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "helmet": "^3.9.0"
+    "helmet": "^3.9.0",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git"
