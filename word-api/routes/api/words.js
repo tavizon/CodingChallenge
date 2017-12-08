@@ -1,6 +1,5 @@
 'use strict';
 
-// const cheerio = require('cheerio');
 const htmlToText = require('html-to-text');
 const requestPage = require('request');
 const validUrl = require('valid-url');
@@ -18,13 +17,17 @@ module.exports = function (router) {
 		return new Promise(function (resolve, reject) {
 			let count = 0;
 			requestPage(url, function (error, response, body) {
-				let html = htmlToText.fromString(body, {
-					wordwrap: false,
-					ignoreImage: true,
-					ignoreHref: true
-				});
+				if (error) {
+					return reject(error);
+				} else {
+					let html = htmlToText.fromString(body, {
+						wordwrap: false,
+						ignoreImage: true,
+						ignoreHref: true
+					});
 
-				resolve(html);
+					return resolve(html);
+				}
 			});
 		});
 	}
