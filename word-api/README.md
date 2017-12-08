@@ -48,3 +48,30 @@ pm2 stop app.js
 ````
 
 Navigate to [http://localhost:5959/ping](http://localhost:5959/ping) to verify that the service is running.
+
+### API Documentation
+
+#### URL
+
+/api/words?url=\<URL\>
+
+#### Method
+
+`GET`
+
+#### URL Parameters
+
+`url=[string]`
+
+#### Success Response:
+Code: 200 <br />
+Content: `{words: <count>}`
+
+#### Error Response
+Code: 404 <br />
+Content: `{"error":"Page not found"}`
+
+OR
+
+Code: 500 <br />
+Content: `{"error":"URL was invalid or not supplied"}`
