@@ -20,13 +20,13 @@ module.exports = function (router) {
 				if (error) {
 					return reject(error);
 				} else {
-					let html = htmlToText.fromString(body, {
+					let text = htmlToText.fromString(body, {
 						wordwrap: false,
 						ignoreImage: true,
 						ignoreHref: true
 					});
 
-					return resolve(html);
+					return resolve(text);
 				}
 			});
 		});
@@ -43,8 +43,8 @@ module.exports = function (router) {
 	function words(request, response) {
 		response.setHeader('Content-Type', 'application/json');
 		if (validUrl.isWebUri(request.query.url)) {
-			getPage(request.query.url).then(function (html) {
-				return response.json({words: wordCount(html)});
+			getPage(request.query.url).then(function (text) {
+				return response.json({words: wordCount(text)});
 			});
 		} else {
 			return response.status(500).json({error: 'URL was invalid or not supplied'});
