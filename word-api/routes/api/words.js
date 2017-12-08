@@ -6,13 +6,13 @@ const validUrl = require('valid-url');
 const wordCount = require('wordcount');
 
 module.exports = function (router) {
-/**
- * Get html from url
- *
- * @param  {string} url - url of html to scrape.
- *
- * @return {string} - html.
- */
+	/**
+	 * Get html from url
+	 *
+	 * @param  {string} url - url of html to scrape.
+	 *
+	 * @return {string} - html.
+	 */
 	function getPage(url) {
 		return new Promise(function (resolve, reject) {
 			let count = 0;
