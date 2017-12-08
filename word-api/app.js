@@ -17,7 +17,7 @@ app.get('/ping', (request, response) => response.send('PONG'));
 app.use('/', require('./routes')(express.Router()));
 
 // 404 for anything else
-app.use('*', (request, response) => response.status(404).send({error: 'Page not found'}));
+app.use('*', (request, response) => response.status(404).json({error: 'Page not found'}));
 
 // Start it up
 module.exports = app.listen(config.application.port, () => {

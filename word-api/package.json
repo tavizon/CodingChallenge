@@ -23,7 +23,10 @@
   "dependencies": {
     "express": "^4.16.2",
     "helmet": "^3.9.0",
-    "valid-url": "^1.0.9"
+    "html-to-text": "^3.3.0",
+    "request": "^2.83.0",
+    "valid-url": "^1.0.9",
+    "wordcount": "^1.1.1"
   },
   "devDependencies": {
     "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git"
