@@ -18,7 +18,7 @@ function getText(url) {
 				// return reject(error);
 				return reject(new Error("Error requesting page"));
 			} else if (response.headers['content-type'].includes('text')) {
-				let text = htmlToText.fromString(body, {
+				const text = htmlToText.fromString(body, {
 					wordwrap: false,
 					ignoreImage: true,
 					ignoreHref: true
@@ -42,8 +42,7 @@ function getText(url) {
 function count(url) {
 	return new Promise(function (resolve, reject) {
 		getText(url).then(function (text) {
-			let counted = wordCount(text);
-			return resolve(counted);
+			return resolve(wordCount(text));
 		})
 		.catch((error) => {
 			return reject(error);
