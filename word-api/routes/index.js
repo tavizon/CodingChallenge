@@ -1,7 +1,6 @@
 'use strict';
 
 const logger = require('../lib/utils/log').getLogger(__filename);
-const is = require('is_js');
 
 module.exports = (router) => {
 	router.all('*', (request, response, next) => {

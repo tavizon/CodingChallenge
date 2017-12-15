@@ -2,7 +2,6 @@
 
 const Words = require('../../lib/words');
 const validUrl = require('valid-url');
-const config = require('../../config');
 const logger = require('../../lib/utils/log').getLogger(__filename);
 
 module.exports = function (router) {

@@ -15,8 +15,7 @@ function getText(url) {
 	return new Promise(function (resolve, reject) {
 		requestPage(url, function (error, response, body) {
 			if (error) {
-				// return reject(error);
-				return reject(new Error("Error requesting page"));
+				return reject(new Error('Error requesting page'));
 			} else if (response.headers['content-type'].includes('text')) {
 				const text = htmlToText.fromString(body, {
 					wordwrap: false,
@@ -24,10 +23,8 @@ function getText(url) {
 					ignoreHref: true
 				});
 				return resolve(text);
-			} else {
-					return reject(new Error("URL contains no text"));
-				}
-			// }
+			}
+			return reject(new Error('URL contains no text'));
 		});
 	});
 }
@@ -35,18 +32,19 @@ function getText(url) {
 /**
  * Count words scraped from a url
  *
- * @param {string} - url of html to scrape.
+ * @param {string} url - url of html to scrape.
  *
  * @return {number} - word count result.
  */
 function count(url) {
 	return new Promise(function (resolve, reject) {
-		getText(url).then(function (text) {
-			return resolve(wordCount(text));
-		})
-		.catch((error) => {
-			return reject(error);
-		});
+		getText(url)
+			.then(function (text) {
+				return resolve(wordCount(text));
+			})
+			.catch((error) => {
+				return reject(error);
+			});
 	});
 }
 
