@@ -22,9 +22,16 @@
   "homepage": "https://github.com/tavizon/CodingChallenge/word-api/#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "helmet": "^3.9.0"
+    "helmet": "^3.9.0",
+    "html-to-text": "^3.3.0",
+    "is_js": "0.9.x",
+    "kink-logger": "git+ssh://git@github.com/Kink-Com/kink-logger.git#v1.1.2",
+    "request": "^2.83.0",
+    "valid-url": "^1.0.9",
+    "wordcount": "^1.1.1"
   },
   "devDependencies": {
-    "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git"
+    "eslint-config-kink": "git+ssh://git@github.com/Kink-Com/eslint-config-kink.git",
+    "eslint-plugin-protractor": "^1.40.0"
   }
 }
