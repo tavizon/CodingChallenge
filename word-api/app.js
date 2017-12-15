@@ -4,6 +4,7 @@ const config = require('./config');
 
 const express = require('express');
 const helmet = require('helmet');
+const logger = require('./lib/utils/log').getLogger(__filename);
 
 const app = express();
 
@@ -21,5 +22,8 @@ app.use('*', (request, response) => response.status(404).json({error: 'Page not 
 
 // Start it up
 module.exports = app.listen(config.application.port, () => {
-	console.log(`word-api - listening on port ${config.application.port}`);
+	logger.info({
+		action: 'listen',
+		message: `word-api - listening on port ${config.application.port}`
+	});
 });

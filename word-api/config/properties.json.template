@@ -6,5 +6,22 @@
     "hidePoweredBy": {
       "setTo": "turkey leftovers"
     }
+  },
+  "log": {
+    "configFile": {
+      "appenders": [
+        {
+          "type": "console",
+          "layout": {
+            "type": "human",
+            "color": true
+          }
+        }
+      ],
+      "levels": {
+        "[all]": "DEBUG"
+      }
+    },
+    "configOption": {}
   }
 }

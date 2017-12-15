@@ -13,25 +13,27 @@ const wordCount = require('wordcount');
  */
 function getText(url) {
 	return new Promise(function (resolve, reject) {
-		let count = 0;
 		requestPage(url, function (error, response, body) {
 			if (error) {
-				return reject(error);
-			} else {
+				// return reject(error);
+				return reject(new Error("Error requesting page"));
+			} else if (response.headers['content-type'].includes('text')) {
 				let text = htmlToText.fromString(body, {
 					wordwrap: false,
 					ignoreImage: true,
 					ignoreHref: true
 				});
-
 				return resolve(text);
-			}
+			} else {
+					return reject(new Error("URL contains no text"));
+				}
+			// }
 		});
 	});
 }
 
 /**
- * Count words in a string
+ * Count words scraped from a url
  *
  * @param {string} - url of html to scrape.
  *
@@ -43,8 +45,8 @@ function count(url) {
 			let counted = wordCount(text);
 			return resolve(counted);
 		})
-		.catch((err) => {
-			return reject(err);
+		.catch((error) => {
+			return reject(error);
 		});
 	});
 }
